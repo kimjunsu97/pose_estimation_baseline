@@ -1,0 +1,25 @@
+Collecting pycocotools
+  Downloading pycocotools-2.0.6.tar.gz (24 kB)
+
+
+  Installing build dependencies ... [?25ldone
+[?25h  Getting requirements to build wheel ... [?25ldone
+[?25h  Preparing metadata (pyproject.toml) ... [?25ldone
+[?25hRequirement already satisfied: matplotlib>=2.1.0 in /home/gsc/anaconda3/envs/baseline/lib/python3.9/site-packages (from pycocotools) (3.5.3)
+Requirement already satisfied: numpy in /home/gsc/anaconda3/envs/baseline/lib/python3.9/site-packages (from pycocotools) (1.21.5)
+Requirement already satisfied: kiwisolver>=1.0.1 in /home/gsc/anaconda3/envs/baseline/lib/python3.9/site-packages (from matplotlib>=2.1.0->pycocotools) (1.4.2)
+Requirement already satisfied: python-dateutil>=2.7 in /home/gsc/anaconda3/envs/baseline/lib/python3.9/site-packages (from matplotlib>=2.1.0->pycocotools) (2.8.2)
+Requirement already satisfied: pyparsing>=2.2.1 in /home/gsc/anaconda3/envs/baseline/lib/python3.9/site-packages (from matplotlib>=2.1.0->pycocotools) (3.0.9)
+Requirement already satisfied: packaging>=20.0 in /home/gsc/anaconda3/envs/baseline/lib/python3.9/site-packages (from matplotlib>=2.1.0->pycocotools) (21.3)
+Requirement already satisfied: cycler>=0.10 in /home/gsc/anaconda3/envs/baseline/lib/python3.9/site-packages (from matplotlib>=2.1.0->pycocotools) (0.11.0)
+Requirement already satisfied: pillow>=6.2.0 in /home/gsc/anaconda3/envs/baseline/lib/python3.9/site-packages (from matplotlib>=2.1.0->pycocotools) (9.2.0)
+Requirement already satisfied: fonttools>=4.22.0 in /home/gsc/anaconda3/envs/baseline/lib/python3.9/site-packages (from matplotlib>=2.1.0->pycocotools) (4.25.0)
+Requirement already satisfied: six>=1.5 in /home/gsc/anaconda3/envs/baseline/lib/python3.9/site-packages (from python-dateutil>=2.7->matplotlib>=2.1.0->pycocotools) (1.16.0)
+Building wheels for collected packages: pycocotools
+
+  Building wheel for pycocotools (pyproject.toml) ... [?25ldone
+[?25h  Created wheel for pycocotools: filename=pycocotools-2.0.6-cp39-cp39-linux_x86_64.whl size=104253 sha256=84a74acd7e6c8458b8fbc0ebdc4c1f248b063708f9d70e6d1a810d0297b706fe
+  Stored in directory: /home/gsc/.cache/pip/wheels/2f/58/25/e78f1f766e904a9071266661d20d0bc6644df86bcd160aba11
+Successfully built pycocotools
+Installing collected packages: pycocotools
+Successfully installed pycocotools-2.0.6
