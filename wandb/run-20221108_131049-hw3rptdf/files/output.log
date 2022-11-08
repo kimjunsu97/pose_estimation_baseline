@@ -1,0 +1,221 @@
+
+loading annotations into memory...
+Done (t=6.41s)
+creating index...
+index created!
+loading annotations into memory...
+Done (t=6.76s)
+creating index...
+index created!
+262145
+/home/gsc/mmpose/data/coco/val2017/000000262145.jpg
+[ WARN:0@285.492] global /io/opencv/modules/imgcodecs/src/loadsave.cpp (239) findDecoder imread_('/home/gsc/mmpose/data/coco/val2017/000000262145.jpg'): can't open/read file: check file path/integrity
+loading annotations into memory...
+Done (t=6.25s)
+creating index...
+index created!
+[ WARN:0@326.407] global /io/opencv/modules/imgcodecs/src/loadsave.cpp (239) findDecoder imread_('/home/gsc/mmpose/data/coco/val2017/000000262145.jpg'): can't open/read file: check file path/integrity
+262145
+/home/gsc/mmpose/data/coco/val2017/000000262145.jpg
+loading annotations into memory...
+Done (t=6.07s)
+creating index...
+index created!
+[ WARN:0@443.054] global /io/opencv/modules/imgcodecs/src/loadsave.cpp (239) findDecoder imread_('/home/gsc/mmpose/data/coco/val2017/000000262145.jpg'): can't open/read file: check file path/integrity
+262145
+/home/gsc/mmpose/data/coco/val2017/000000262145.jpg
+loading annotations into memory...
+Done (t=6.56s)
+creating index...
+index created!
+[ WARN:0@1203.080] global /io/opencv/modules/imgcodecs/src/loadsave.cpp (239) findDecoder imread_('/home/gsc/mmpose/data/coco/val2017/000000262145.jpg'): can't open/read file: check file path/integrity
+262145
+/home/gsc/mmpose/data/coco/val2017/000000262145.jpg
+loading annotations into memory...
+Done (t=6.25s)
+creating index...
+index created!
+262145
+/home/gsc/mmpose/data/coco/train2017/000000262145.jpg
+loading annotations into memory...
+Done (t=7.27s)
+creating index...
+index created!
+262145
+/home/gsc/mmpose/data/coco/train2017/000000262145.jpg
+/home/gsc/mmpose/data/coco/train2017/000000262145.jpg
+427 640
+loading annotations into memory...
+Done (t=6.66s)
+creating index...
+index created!
+262145
+/home/gsc/mmpose/data/coco/train2017/000000262145.jpg
+/home/gsc/mmpose/data/coco/train2017/000000262145.jpg
+427 640
+[[0 0 0]
+ [0 0 0]
+ [0 0 0]
+ [0 0 0]
+ [0 0 0]
+ [0 0 0]
+ [0 0 0]
+ [0 0 0]
+ [0 0 0]
+ [0 0 0]
+ [0 0 0]
+ [0 0 0]
+ [0 0 0]
+ [0 0 0]
+ [0 0 0]
+ [0 0 0]
+ [0 0 0]]
+x shape is : (17, 1, 1)
+xx shape is : torch.Size([1, 1, 427, 640])
+torch.Size([1, 17, 427, 640])
+loading annotations into memory...
+Done (t=6.21s)
+creating index...
+index created!
+262145
+/home/gsc/mmpose/data/coco/train2017/000000262145.jpg
+/home/gsc/mmpose/data/coco/train2017/000000262145.jpg
+427 640
+[[0 0 0]
+ [0 0 0]
+ [0 0 0]
+ [0 0 0]
+ [0 0 0]
+ [0 0 0]
+ [0 0 0]
+ [0 0 0]
+ [0 0 0]
+ [0 0 0]
+ [0 0 0]
+ [0 0 0]
+ [0 0 0]
+ [0 0 0]
+ [0 0 0]
+ [0 0 0]
+ [0 0 0]]
+x shape is : (17, 1, 1)
+xx shape is : torch.Size([1, 1, 427, 640])
+torch.Size([1, 17, 427, 640])
+loading annotations into memory...
+Done (t=6.22s)
+creating index...
+index created!
+262145
+/home/gsc/mmpose/data/coco/train2017/000000262145.jpg
+/home/gsc/mmpose/data/coco/train2017/000000262145.jpg
+427 640
+[[0 0 0]
+ [0 0 0]
+ [0 0 0]
+ [0 0 0]
+ [0 0 0]
+ [0 0 0]
+ [0 0 0]
+ [0 0 0]
+ [0 0 0]
+ [0 0 0]
+ [0 0 0]
+ [0 0 0]
+ [0 0 0]
+ [0 0 0]
+ [0 0 0]
+ [0 0 0]
+ [0 0 0]]
+x shape is : (17, 1, 1)
+xx shape is : torch.Size([1, 1, 427, 640])
+torch.Size([1, 17, 427, 640])
+loading annotations into memory...
+Done (t=7.21s)
+creating index...
+index created!
+262145
+/home/gsc/mmpose/data/coco/train2017/000000262145.jpg
+/home/gsc/mmpose/data/coco/train2017/000000262145.jpg
+427 640
+[[0 0 0]
+ [0 0 0]
+ [0 0 0]
+ [0 0 0]
+ [0 0 0]
+ [0 0 0]
+ [0 0 0]
+ [0 0 0]
+ [0 0 0]
+ [0 0 0]
+ [0 0 0]
+ [0 0 0]
+ [0 0 0]
+ [0 0 0]
+ [0 0 0]
+ [0 0 0]
+ [0 0 0]]
+x shape is : (17, 1, 1)
+xx shape is : torch.Size([1, 1, 427, 640])
+torch.Size([1, 17, 427, 640])
+loading annotations into memory...
+Done (t=6.12s)
+creating index...
+index created!
+262145
+/home/gsc/mmpose/data/coco/train2017/000000262145.jpg
+img_test_shape is : (427, 640, 3)
+/home/gsc/mmpose/data/coco/train2017/000000262145.jpg
+427 640
+[[0 0 0]
+ [0 0 0]
+ [0 0 0]
+ [0 0 0]
+ [0 0 0]
+ [0 0 0]
+ [0 0 0]
+ [0 0 0]
+ [0 0 0]
+ [0 0 0]
+ [0 0 0]
+ [0 0 0]
+ [0 0 0]
+ [0 0 0]
+ [0 0 0]
+ [0 0 0]
+ [0 0 0]]
+x shape is : (17, 1, 1)
+xx shape is : torch.Size([1, 1, 427, 640])
+torch.Size([1, 17, 427, 640])
+loading annotations into memory...
+Done (t=7.07s)
+creating index...
+index created!
+262145
+/home/gsc/mmpose/data/coco/train2017/000000262145.jpg
+img_test_shape is : (427, 640, 3)
+/home/gsc/mmpose/data/coco/train2017/000000262145.jpg
+427 640
+[[0 0 0]
+ [0 0 0]
+ [0 0 0]
+ [0 0 0]
+ [0 0 0]
+ [0 0 0]
+ [0 0 0]
+ [0 0 0]
+ [0 0 0]
+ [0 0 0]
+ [0 0 0]
+ [0 0 0]
+ [0 0 0]
+ [0 0 0]
+ [0 0 0]
+ [0 0 0]
+ [0 0 0]]
+x shape is : (17, 1, 1)
+xx shape is : torch.Size([1, 1, 427, 640])
+torch.Size([1, 17, 427, 640])
+image_test_resize_shape is: torch.Size([3, 256, 192])
+image_test_resize_shape is: torch.Size([3, 256, 192])
+image_test_resize_shape is: torch.Size([3, 256, 192])
+torch.Size([1, 17, 427, 640])orch.Size([3, 256, 192])

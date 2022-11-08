@@ -1,0 +1,124 @@
+{
+    "os": "Linux-5.13.0-30-generic-x86_64-with-glibc2.31",
+    "python": "3.9.13",
+    "heartbeatAt": "2022-11-07T04:32:28.536282",
+    "startedAt": "2022-11-07T04:32:27.483580",
+    "docker": null,
+    "cuda": null,
+    "args": null,
+    "state": "running",
+    "program": "pose_estimation_baseline/pose_estimation_baseline/hrnet.ipynb",
+    "root": "/home/gsc/pose_estimation_baseline/pose_estimation_baseline",
+    "git": {
+        "remote": "https://github.com/kimjunsu97/pose_estimation_baseline.git",
+        "commit": "030dd3ad1f2a3ee8e28c47b7f5604f34bda4614e"
+    },
+    "email": "80962130+kimjunsu97@users.noreply.github.com",
+    "host": "gsc-Precision-3650-Tower",
+    "username": "gsc",
+    "executable": "/home/gsc/anaconda3/envs/baseline/bin/python",
+    "cpu_count": 8,
+    "cpu_count_logical": 16,
+    "cpu_freq": {
+        "current": 3.6281874999999997,
+        "min": 800.0,
+        "max": 5150.0
+    },
+    "cpu_freq_per_core": [
+        {
+            "current": 3.5,
+            "min": 800.0,
+            "max": 5100.0
+        },
+        {
+            "current": 3.5,
+            "min": 800.0,
+            "max": 5100.0
+        },
+        {
+            "current": 4.321,
+            "min": 800.0,
+            "max": 5300.0
+        },
+        {
+            "current": 4.321,
+            "min": 800.0,
+            "max": 5300.0
+        },
+        {
+            "current": 3.5,
+            "min": 800.0,
+            "max": 5100.0
+        },
+        {
+            "current": 3.5,
+            "min": 800.0,
+            "max": 5100.0
+        },
+        {
+            "current": 3.5,
+            "min": 800.0,
+            "max": 5100.0
+        },
+        {
+            "current": 3.5,
+            "min": 800.0,
+            "max": 5100.0
+        },
+        {
+            "current": 3.5,
+            "min": 800.0,
+            "max": 5100.0
+        },
+        {
+            "current": 3.909,
+            "min": 800.0,
+            "max": 5100.0
+        },
+        {
+            "current": 3.5,
+            "min": 800.0,
+            "max": 5300.0
+        },
+        {
+            "current": 3.5,
+            "min": 800.0,
+            "max": 5300.0
+        },
+        {
+            "current": 3.5,
+            "min": 800.0,
+            "max": 5100.0
+        },
+        {
+            "current": 3.5,
+            "min": 800.0,
+            "max": 5100.0
+        },
+        {
+            "current": 3.5,
+            "min": 800.0,
+            "max": 5100.0
+        },
+        {
+            "current": 3.5,
+            "min": 800.0,
+            "max": 5100.0
+        }
+    ],
+    "disk": {
+        "total": 1921.4703826904297,
+        "used": 400.16027069091797
+    },
+    "gpu": "NVIDIA GeForce RTX 3090",
+    "gpu_count": 1,
+    "gpu_devices": [
+        {
+            "name": "NVIDIA GeForce RTX 3090",
+            "memory_total": 25423577088
+        }
+    ],
+    "memory": {
+        "total": 62.53786087036133
+    }
+}
