@@ -1,0 +1,49 @@
+2022-11-09 15:59:27,699 INFO    MainThread:1874767 [wandb_setup.py:_flush():68] Configure stats pid to 1874767
+2022-11-09 15:59:27,699 INFO    MainThread:1874767 [wandb_setup.py:_flush():68] Loading settings from /home/gsc/.config/wandb/settings
+2022-11-09 15:59:27,699 INFO    MainThread:1874767 [wandb_setup.py:_flush():68] Loading settings from /home/gsc/pose_estimation_baseline/pose_estimation_baseline/wandb/settings
+2022-11-09 15:59:27,699 INFO    MainThread:1874767 [wandb_setup.py:_flush():68] Loading settings from environment variables: {'_require_service': 'True'}
+2022-11-09 15:59:27,700 INFO    MainThread:1874767 [wandb_setup.py:_flush():68] Inferring run settings from compute environment: {'program': '<python with no main file>'}
+2022-11-09 15:59:27,700 INFO    MainThread:1874767 [wandb_init.py:_log_setup():476] Logging user logs to /home/gsc/pose_estimation_baseline/pose_estimation_baseline/wandb/run-20221109_155927-2gr92z7g/logs/debug.log
+2022-11-09 15:59:27,700 INFO    MainThread:1874767 [wandb_init.py:_log_setup():477] Logging internal logs to /home/gsc/pose_estimation_baseline/pose_estimation_baseline/wandb/run-20221109_155927-2gr92z7g/logs/debug-internal.log
+2022-11-09 15:59:27,700 INFO    MainThread:1874767 [wandb_init.py:init():516] calling init triggers
+2022-11-09 15:59:27,700 INFO    MainThread:1874767 [wandb_init.py:init():519] wandb.init called with sweep_config: {}
+config: {}
+2022-11-09 15:59:27,700 INFO    MainThread:1874767 [wandb_init.py:init():535] re-initializing run, found existing run on stack: 2xg2sn68
+2022-11-09 15:59:27,814 ERROR   MainThread:1874767 [wandb_init.py:init():1105] error
+Traceback (most recent call last):
+  File "/home/gsc/anaconda3/envs/baseline/lib/python3.9/site-packages/wandb/sdk/wandb_init.py", line 1078, in init
+    run = wi.init()
+  File "/home/gsc/anaconda3/envs/baseline/lib/python3.9/site-packages/wandb/sdk/wandb_init.py", line 548, in init
+    self._wl._global_run_stack[-1].finish()
+  File "/home/gsc/anaconda3/envs/baseline/lib/python3.9/site-packages/wandb/sdk/wandb_run.py", line 292, in wrapper
+    return func(self, *args, **kwargs)
+  File "/home/gsc/anaconda3/envs/baseline/lib/python3.9/site-packages/wandb/sdk/wandb_run.py", line 255, in wrapper
+    return func(self, *args, **kwargs)
+  File "/home/gsc/anaconda3/envs/baseline/lib/python3.9/site-packages/wandb/sdk/wandb_run.py", line 1739, in finish
+    return self._finish(exit_code, quiet)
+  File "/home/gsc/anaconda3/envs/baseline/lib/python3.9/site-packages/wandb/sdk/wandb_run.py", line 1745, in _finish
+    tel.feature.finish = True
+  File "/home/gsc/anaconda3/envs/baseline/lib/python3.9/site-packages/wandb/sdk/lib/telemetry.py", line 40, in __exit__
+    self._run._telemetry_callback(self._obj)
+  File "/home/gsc/anaconda3/envs/baseline/lib/python3.9/site-packages/wandb/sdk/wandb_run.py", line 608, in _telemetry_callback
+    self._telemetry_flush()
+  File "/home/gsc/anaconda3/envs/baseline/lib/python3.9/site-packages/wandb/sdk/wandb_run.py", line 619, in _telemetry_flush
+    self._backend.interface._publish_telemetry(self._telemetry_obj)
+  File "/home/gsc/anaconda3/envs/baseline/lib/python3.9/site-packages/wandb/sdk/interface/interface_shared.py", line 97, in _publish_telemetry
+    self._publish(rec)
+  File "/home/gsc/anaconda3/envs/baseline/lib/python3.9/site-packages/wandb/sdk/interface/interface_sock.py", line 51, in _publish
+    self._sock_client.send_record_publish(record)
+  File "/home/gsc/anaconda3/envs/baseline/lib/python3.9/site-packages/wandb/sdk/lib/sock_client.py", line 221, in send_record_publish
+    self.send_server_request(server_req)
+  File "/home/gsc/anaconda3/envs/baseline/lib/python3.9/site-packages/wandb/sdk/lib/sock_client.py", line 155, in send_server_request
+    self._send_message(msg)
+  File "/home/gsc/anaconda3/envs/baseline/lib/python3.9/site-packages/wandb/sdk/lib/sock_client.py", line 152, in _send_message
+    self._sendall_with_error_handle(header + data)
+  File "/home/gsc/anaconda3/envs/baseline/lib/python3.9/site-packages/wandb/sdk/lib/sock_client.py", line 130, in _sendall_with_error_handle
+    sent = self._sock.send(data)
+BrokenPipeError: [Errno 32] Broken pipe
+2022-11-09 15:59:29,849 INFO    MainThread:1874767 [wandb_init.py:_pause_backend():389] pausing backend
+2022-11-09 15:59:29,849 INFO    MainThread:1874767 [jupyter.py:save_ipynb():378] not saving jupyter notebook
+2022-11-09 16:00:08,668 INFO    MainThread:1874767 [wandb_init.py:_resume_backend():398] resuming backend
+2022-11-09 16:00:08,678 INFO    MainThread:1874767 [wandb_init.py:_pause_backend():389] pausing backend
+2022-11-09 16:00:08,678 INFO    MainThread:1874767 [jupyter.py:save_ipynb():378] not saving jupyter notebook

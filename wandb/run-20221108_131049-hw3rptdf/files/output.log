@@ -219,3 +219,5 @@ image_test_resize_shape is: torch.Size([3, 256, 192])
 image_test_resize_shape is: torch.Size([3, 256, 192])
 image_test_resize_shape is: torch.Size([3, 256, 192])
 torch.Size([1, 17, 427, 640])orch.Size([3, 256, 192])
+torch.Size([1, 17, 427, 640])orch.Size([3, 256, 192])
+wandb: Network error (ReadTimeout), entering retry loop.
