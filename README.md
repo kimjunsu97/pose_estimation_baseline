@@ -147,8 +147,8 @@ image = cv2.cvtColor(image, cv2.COLOR_BGR2RGB)
 
 image_height = image.shape[0]
 image_width = image.shape[1]
-print(image_height)
-print(image_width)
+#print(image_height)
+#print(image_width)
 
 x,y,w,h = valid_anns_test[index]['bbox']
 x = int(x+0.5); y = int(y+0.5); w = int(w+0.5); h = int(h+0.5);
@@ -163,14 +163,14 @@ keypoints = label[:,:2]
 plt.scatter(keypoints[:,0],keypoints[:,1])
 plt.imshow(image)
 plt.show()
-print(keypoints)
+#print(keypoints)
 
 cropped_label = keypoints.copy()
 cropped_label[:,0] = cropped_label[:,0]-x
 cropped_label[:,1] = cropped_label[:,1]-y
 cropped_label[cropped_label<0] = 0 
 
-print(cropped_label)
+#print(cropped_label)
 class_labels = [
         "nose",
         "left_eye",
@@ -211,7 +211,7 @@ transformed_image = transformed['image']
 plt.imshow(transformed_image)
 
 transformed_keypoints = np.array(transformed['keypoints'])
-print(np.array(transformed_keypoints))
+#print(np.array(transformed_keypoints))
 plt.scatter(np.array(transformed_keypoints)[:,0],np.array(transformed_keypoints)[:,1])
 plt.show()
 transformed_class_labels = transformed['class_labels']
@@ -220,10 +220,10 @@ transformed_class_labels = transformed['class_labels']
 transformed_keypoints[:,0] = (transformed_keypoints[:,0]*(64/image_width)+0.5).astype(int)
 transformed_keypoints[:,1] = (transformed_keypoints[:,1]*(48/image_height)+0.5).astype(int)
 transformed_image = np.resize(transformed_image,(48,64))
-print(transformed_image.shape)
-plt.imshow(transformed_image)
-plt.scatter(np.array(transformed_keypoints)[:,0],np.array(transformed_keypoints)[:,1])
-plt.show()
+#print(transformed_image.shape)
+#plt.imshow(transformed_image)
+#plt.scatter(np.array(transformed_keypoints)[:,0],np.array(transformed_keypoints)[:,1])
+#plt.show()
 ##############################################################################
 #crop
 cropped_transformed_image = cropped_transformed['image']
@@ -236,13 +236,13 @@ plt.show()
 cropped_image_height = cropped_img.shape[0]
 cropped_image_width = cropped_img.shape[1]
 
-print(cropped_image_height)
-print(cropped_image_width)
+#print(cropped_image_height)
+#print(cropped_image_width)
 cropped_resized_transformed_image = cv2.resize(cropped_transformed_image,(64,48))
-plt.imshow(cropped_resized_transformed_image)
-plt.show()
+#plt.imshow(cropped_resized_transformed_image)
+#plt.show()
 ###############################################################################
-print(cropped_transformed_keypoints)
+#print(cropped_transformed_keypoints)
 cropped_resized_transformed_keypoints = cropped_transformed_keypoints.copy()
 #cropped_resized_transformed_keypoints[:,0] = (cropped_transformed_keypoints[:,0]*(64/cropped_image_width)+0.5).astype(int)
 #cropped_resized_transformed_keypoints[:,1] = (cropped_transformed_keypoints[:,1]*(48/cropped_image_height)+0.5).astype(int)
@@ -252,16 +252,18 @@ a = dict(zip(cropped_transformed_class_labels, cropped_resized_transformed_keypo
 cropped_resized_transformed_keypoints[:,0] = (cropped_transformed_keypoints[:,0]*(64/256)+0.5).astype(int)
 cropped_resized_transformed_keypoints[:,1] = (cropped_transformed_keypoints[:,1]*(48/192)+0.5).astype(int)
 
-print(cropped_resized_transformed_keypoints)
+#print(cropped_resized_transformed_keypoints)
 plt.imshow(cropped_resized_transformed_image)
 plt.scatter(np.array(cropped_resized_transformed_keypoints)[:,0],np.array(cropped_resized_transformed_keypoints)[:,1])
 plt.show()
-print(cropped_transformed_class_labels)
-print(a)
+#print(cropped_transformed_class_labels)
+#print(a)
 ```
 
-    427
-    640
+
+    
+![png](output_7_0.png)
+    
 
 
 
@@ -276,134 +278,16 @@ print(a)
     
 
 
-    [[320  97]
-     [324  93]
-     [  0   0]
-     [335  93]
-     [  0   0]
-     [337 112]
-     [  0   0]
-     [348 137]
-     [  0   0]
-     [333 161]
-     [  0   0]
-     [327 170]
-     [  0   0]
-     [  0   0]
-     [  0   0]
-     [  0   0]
-     [  0   0]]
-    [[11 20]
-     [15 16]
-     [ 0  0]
-     [26 16]
-     [ 0  0]
-     [28 35]
-     [ 0  0]
-     [39 60]
-     [ 0  0]
-     [24 84]
-     [ 0  0]
-     [18 93]
-     [ 0  0]
-     [ 0  0]
-     [ 0  0]
-     [ 0  0]
-     [ 0  0]]
-    [[127.6         43.61592506]
-     [255.6          0.        ]
-     [126.          41.81733021]
-     [255.6          0.        ]
-     [121.6         41.81733021]
-     [255.6          0.        ]
-     [120.8         50.36065574]
-     [255.6          0.        ]
-     [116.4         61.60187354]
-     [255.6          0.        ]
-     [122.4         72.39344262]
-     [255.6          0.        ]
-     [124.8         76.44028103]
-     [255.6          0.        ]
-     [255.6          0.        ]
-     [255.6          0.        ]
-     [255.6          0.        ]]
+
+    
+![png](output_7_3.png)
+    
 
 
 
     
 ![png](output_7_4.png)
     
-
-
-    (48, 64)
-
-
-
-    
-![png](output_7_6.png)
-    
-
-
-
-    
-![png](output_7_7.png)
-    
-
-
-    149
-    50
-
-
-
-    
-![png](output_7_9.png)
-    
-
-
-    [[194.56        25.77181208]
-     [250.88         0.        ]
-     [174.08        20.61744966]
-     [250.88         0.        ]
-     [117.76        20.61744966]
-     [250.88         0.        ]
-     [107.52        45.10067114]
-     [250.88         0.        ]
-     [ 51.2         77.31543624]
-     [250.88         0.        ]
-     [128.         108.24161074]
-     [250.88         0.        ]
-     [158.72       119.83892617]
-     [250.88         0.        ]
-     [250.88         0.        ]
-     [250.88         0.        ]
-     [250.88         0.        ]]
-    [[49.  6.]
-     [63.  0.]
-     [44.  5.]
-     [63.  0.]
-     [29.  5.]
-     [63.  0.]
-     [27. 11.]
-     [63.  0.]
-     [13. 19.]
-     [63.  0.]
-     [32. 27.]
-     [63.  0.]
-     [40. 30.]
-     [63.  0.]
-     [63.  0.]
-     [63.  0.]
-     [63.  0.]]
-
-
-
-    
-![png](output_7_11.png)
-    
-
-
-    ['nose', 'right_eye', 'left_eye', 'right_ear', 'left_ear', 'right_shoulder', 'left_shoulder', 'right_elbow', 'left_elbow', 'right_wrist', 'left_wrist', 'right_hip', 'left_hip', 'right_knee', 'left_knee', 'right_ankle', 'left_ankle']
-    {'nose': array([49.,  6.]), 'right_eye': array([63.,  0.]), 'left_eye': array([44.,  5.]), 'right_ear': array([63.,  0.]), 'left_ear': array([29.,  5.]), 'right_shoulder': array([63.,  0.]), 'left_shoulder': array([27., 11.]), 'right_elbow': array([63.,  0.]), 'left_elbow': array([13., 19.]), 'right_wrist': array([63.,  0.]), 'left_wrist': array([32., 27.]), 'right_hip': array([63.,  0.]), 'left_hip': array([40., 30.]), 'right_knee': array([63.,  0.]), 'left_knee': array([63.,  0.]), 'right_ankle': array([63.,  0.]), 'left_ankle': array([63.,  0.])}
 
 
 
@@ -1494,7 +1378,7 @@ transform = A.Compose([
                         ])
 image_test = transform(image=image_test)['image'].to(device)
 image_test = image_test[None,:,:,:]
-print(image_test.shape)
+#print(image_test.shape)
 infer_model.to(device)
 infer_model.eval()
     
@@ -1502,17 +1386,17 @@ model_preds = []
     
 with torch.no_grad():
     model_pred = infer_model(image_test).detach().cpu().numpy()[0]
-print(model_pred.shape)
+#print(model_pred.shape)
 final = 0
 plt.imshow(image_test0)
 
 for key in model_pred:
     large = np.max(key)
-    print(large)
+    #print(large)
     if large>=0.5:
         
         y_x = np.where(key==large)
-        print(np.array(y_x).flatten())
+        #print(np.array(y_x).flatten())
         plt.scatter(int(y_x[1]*(150/64)),int(y_x[0]*(350/48)))
 plt.show()
 ```
@@ -1523,44 +1407,13 @@ plt.show()
     
 
 
-    torch.Size([1, 3, 192, 256])
-    (17, 48, 64)
-    0.7460231
-    [10 10]
-    0.6701046
-    [ 7 12]
-    0.13159448
-    0.7958866
-    [ 6 17]
-    0.14771187
-    0.94074863
-    [10 21]
-    0.8388404
-    [ 9 34]
-    0.837343
-    [19 19]
-    0.5167464
-    [18 29]
-    0.71499914
-    [24 10]
-    0.61359274
-    [23 12]
-    0.89848423
-    [23 42]
-    0.8595343
-    [21 54]
-    0.89744914
-    [34 38]
-    0.82780623
-    [33 43]
-    0.8261866
-    [44 36]
-    0.77243084
-    [44 47]
-
-
 
     
-![png](output_29_2.png)
+![png](output_29_1.png)
     
 
+
+
+```python
+
+```
